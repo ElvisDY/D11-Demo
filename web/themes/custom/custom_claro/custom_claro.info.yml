@@ -1,0 +1,13 @@
+name: Custom Claro
+type: theme
+description: "Custom admin theme based on Claro."
+base theme: claro
+core_version_requirement: ^10 || ^11
+package: Custom
+libraries:
+  - custom_claro/global-styling
+libraries-override:
+  claro/system.admin:
+    css:
+      layout:
+        css/layout/system-admin--layout.css: false
